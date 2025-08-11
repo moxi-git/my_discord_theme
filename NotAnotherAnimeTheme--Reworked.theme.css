@@ -1,0 +1,259 @@
+/**
+* @name NotAnotherAnimeTheme // Reworked
+* @author puckzxz#2080 / moxiu
+* @version 3.5
+* @description An easily customizable and automatically updating theme
+* @invite FdZhbjY
+* @source https://github.com/puckzxz/NotAnotherAnimeTheme
+* @updateUrl https://raw.githubusercontent.com/puckzxz/NotAnotherAnimeTheme/master/NotAnotherAnimeTheme.theme.css
+*/
+
+@import url(https://puckzxz.github.io/NotAnotherAnimeTheme/build/v3/naat.v3.css);
+
+/*
+  To make editing this theme easier I recommend using Sublime Text editor
+  you can download it for free here https://www.sublimetext.com/
+*/
+
+/* Any images you use MUST end with .jpg or .png or any other image extension */
+
+/* Custom Frosted Glass Effect */
+.backdrop-1wrmKB,
+.layer-3QrUeG,
+.container-PNkimc,
+.sidebar-2K8pFh,
+.chat-3bRxxu,
+.members-1998pB,
+.container-1r6BKw,
+.guilds-1SWlCJ,
+.privateChannels-1nO12o,
+.headerBar-UHpsPw,
+.winButton-iRh8-Z,
+.searchBar-3dMhjb,
+.messagesPopoutWrap-1MQ1bW,
+.container-3baos1,
+.peopleColumn-29fq28 {
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* Light Frosted Glass for secondary elements */
+.reaction-1hd86g,
+.embedFull-2tM8--,
+.menu-3sdvDG,
+.contextMenu-HLZMGh,
+.autocomplete-1vrmpx,
+.searchResultsWrap-3-pOjs,
+.quickswitcher-3JagVE,
+.modal-yWgWj- {
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+}
+
+/* Heavy Frosted Glass for popouts and modals */
+.userPopout-3XzG_A,
+.userProfileModal-3C6LSf,
+.root-SR8cQa,
+.phoneField-38N1ca,
+.container-1CE3eW {
+  backdrop-filter: blur(35px) saturate(200%);
+  -webkit-backdrop-filter: blur(35px) saturate(200%);
+}
+
+:root {
+  /*
+    Theme Background
+  */
+  --theme-background-image: url(https://i.imgur.com/j1Z6HVc.jpg);
+
+  /*
+    Main Theme Color
+  */
+  --main-theme-color: #5865f2;
+
+  /*
+    Main Theme Transparency - Much darker overall background
+  */
+  --theme-transparency: rgba(0, 0, 0, 0.9);
+
+  /*
+    Home Icon Image
+  */
+  --home-icon-image: url(https://i.imgur.com/63g6Em8.jpg);
+
+  /*
+    Change your home icon image position
+  */
+  --home-icon-image-position: center center;
+
+  /*
+    Change your home icon image zoom
+  */
+  --home-icon-image-zoom: 100%;
+
+  /*
+    Server Listing Width
+    Single Column:  62px
+    Double Column:  126px
+    Triple Column:  184px
+    Quad Column:    242px
+  */
+  --server-listing-width: 72px;
+
+  /*
+    Font Size
+  */
+  --font-size: 100%;
+
+  /*
+    Mention colors - Transparent with frosted effect
+  */
+  --mention-color: rgba(88, 101, 242, 0.15);
+  --mention-slider: rgba(88, 101, 242, 0.8);
+  --mention-hover-color: rgba(88, 101, 242, 0.25);
+
+  /*
+    Server category hover color
+  */
+  --category-hover-color: rgba(88, 101, 242, 0.6);
+
+  /*
+    Change the unread server animation.
+    Replace it with "none" in order to remove any animations and use the main color instead
+  */
+  --unread-server-animation: none;
+
+  /*
+    Video / Screen share buttons - Frosted glass effect
+  */
+  --video-screen-button-background-color: rgba(0, 0, 0, 0.4);
+  --video-screen-button-foreground-color: #dcddde;
+  --video-screen-button-background-hover-color: rgba(88, 101, 242, 0.5);
+  --video-screen-button-foreground-hover-color: #ffffff;
+
+  /*
+    Role Title Color
+  */
+  --member-listing-role-color: var(--main-theme-color);
+
+  /*
+    Small User Popout - Heavy frosted glass
+  */
+  --small-user-popout-background-image: var(--theme-background-image);
+  --small-user-popout-background-transparency: rgba(0, 0, 0, 0.3);
+  --small-user-popout-background-image-position: center;
+
+  /*
+    Big User Popout - Heavy frosted glass
+  */
+  --big-user-popout-background-image: var(--theme-background-image);
+  --big-user-popout-background-transparency: rgba(0, 0, 0, 0.3);
+  --big-user-popout-background-image-position: center;
+
+  /*
+    Code Markup - Frosted glass
+  */
+  --code-markup-background-color: rgba(0, 0, 0, 0.5);
+  --code-markup-border: 1px solid rgba(255, 255, 255, 0.1);
+
+  /*
+    Message Box Transparency - Light frosted
+  */
+  --message-box-transparency: rgba(0, 0, 0, 0.4);
+
+  /*
+    Embed Background Transparency - Medium frosted
+  */
+  --embed-background-transparency: rgba(0, 0, 0, 0.5);
+
+  /*
+    Message Hover Buttons - Light frosted
+  */
+  --message-hover-buttons-background: rgba(0, 0, 0, 0.6);
+
+  /*
+    Context Menu Transparency - Medium frosted
+  */
+  --context-menu-transparency: rgba(0, 0, 0, 0.4);
+
+  /*
+    Add Server / Discovery Icon - Transparent
+  */
+  --add-discover-icon-transparency: rgba(88, 101, 242, 0.2);
+  --add-discover-icon-color: #5865f2;
+
+  /*
+    Channel Limit Number Color - Transparent
+  */
+  --channel-limit-count-color: #dcddde;
+  --channel-limit-background-left: rgba(0, 0, 0, 0.3);
+  --channel-limit-background-right: rgba(88, 101, 242, 0.6);
+
+  /*
+    Scrollbar Colors - Semi-transparent
+  */
+  --scrollbar-color: rgba(88, 101, 242, 0.4);
+
+  /*
+    Unread Message Divider - Semi-transparent
+  */
+  --unread-message-divider-color: rgba(88, 101, 242, 0.8);
+  --unread-message-divider-font-color: #ffffff;
+
+  /*
+    New Messages Bar Color - Semi-transparent
+  */
+  --new-messages-bar-background-color: rgba(88, 101, 242, 0.8);
+  --new-messages-bar-font-color: #ffffff;
+
+  /*
+    Emoji Menu - Light frosted glass
+  */
+  --emoji-menu-background-color: rgba(0, 0, 0, 0.3);
+  --emoji-menu-slider-background-color: rgba(0, 0, 0, 0.1);
+  --emoji-menu-server-header-background-color: rgba(0, 0, 0, 0.5);
+  --emoji-menu-bottom-bar-background-color: rgba(0, 0, 0, 0.5);
+  --emoji-menu-search-bar-background-color: rgba(255, 255, 255, 0.1);
+
+  /*
+    Message Search - Medium frosted glass
+  */
+  --message-search-menu-background-color: rgba(0, 0, 0, 0.4);
+  --message-search-container-background-color: rgba(0, 0, 0, 0.3);
+  --message-search-result-background-color: rgba(88, 101, 242, 0.15);
+
+  /*
+    Channel colors - Enhanced visibility on glass
+  */
+  --text-voice-channel-color: rgba(185, 187, 190, 0.8);
+  --text-voice-channel-hover-color: rgba(220, 221, 222, 0.9);
+  --text-voice-channel-selected-text-color: #ffffff;
+  --unread-text-channel-color: #ffffff;
+  --unread-text-channel-bubble-color: var(--main-theme-color);
+
+  /*
+    Folders - Transparent frosted
+  */
+  --folder-background-color: rgba(0, 0, 0, 0.3);
+  --expanded-folder-background-color: rgba(0, 0, 0, 0.2);
+
+  /*
+    Reactions - Light frosted glass
+  */
+  --reaction-emoji-background-color: rgba(255, 255, 255, 0.05);
+  --reaction-emoji-border-color: 1px solid rgba(255, 255, 255, 0.1);
+  --reaction-emoji-hover-background-color: rgba(88, 101, 242, 0.2);
+  --reaction-emoji-hover-border-color: rgba(88, 101, 242, 0.4);
+
+  /*
+    Settings and Modals - Heavy frosted glass
+  */
+  --settings-background-transparency: rgba(0, 0, 0, 0.2);
+  --modal-background-transparency: rgba(0, 0, 0, 0.3);
+  
+  /*
+    Notification and Accessibility - Medium frosted
+  */
+  --notification-background-transparency: rgba(0, 0, 0, 0.4);
+  --accessibility-background-transparency: rgba(0, 0, 0, 0.5);
+}
